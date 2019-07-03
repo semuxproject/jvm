@@ -1,10 +1,10 @@
 #!/bin/sh
 
-JDK_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_osx-x64_bin.tar.gz
-JDK_FILE=openjdk-11.0.2_osx-x64_bin.tar.gz
-JDK_DIR=jdk-11.0.2.jdk
+JDK_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+JDK_FILE=openjdk-11.0.2_linux-x64_bin.tar.gz
+JDK_DIR=jdk-11.0.2
 JVM_DIR=jvm
-JVM_FILE=jvm-11-macos.tar.gz
+JVM_FILE=jvm-11-linux.tar.gz
 
 # change work directory
 cd "$(dirname "$0")"
@@ -17,11 +17,11 @@ else
 	wget $JDK_URL || exit 1
 fi
 
-echo "Unzipping openjdk.."
+echo "Unzipping openjdk"
 tar -xf $JDK_FILE
 
 echo "Building Java Runtime.."
-./$JDK_DIR/Contents/Home/bin/jlink \
+./$JDK_DIR/bin/jlink \
 --output $JVM_DIR \
 --compress 2 \
 --no-man-pages \

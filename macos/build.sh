@@ -1,8 +1,8 @@
 #!/bin/sh
 
-JDK_URL=https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_osx-x64_bin.tar.gz
-JDK_FILE=openjdk-11.0.2_osx-x64_bin.tar.gz
-JDK_DIR=jdk-11.0.2.jdk
+JDK_URL=https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.4%2B11/OpenJDK11U-jdk_x64_mac_hotspot_11.0.4_11.tar.gz
+JDK_FILE=OpenJDK11U-jdk_x64_mac_hotspot_11.0.4_11.tar.gz
+JDK_DIR=jdk-11.0.4+11
 JVM_DIR=jvm
 JVM_FILE=jvm-11-macos.tar.gz
 

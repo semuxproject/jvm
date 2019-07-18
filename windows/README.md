@@ -1,6 +1,6 @@
 # Build Instruction
 
-1. Download OpenJDK from https://jdk.java.net/archive/
+1. Download OpenJDK binaries from https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/latest
 
 2. Unzip and run the following command:
 

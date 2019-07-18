@@ -25,7 +25,7 @@ echo "Building Java Runtime.."
 --output $JVM_DIR \
 --compress 2 \
 --no-man-pages \
---add-modules java.base,java.desktop,java.management,java.logging,jdk.unsupported \
+--add-modules java.base,java.desktop,java.management,java.logging,jdk.unsupported,java.naming \
 || exit 2
 
 echo "Creating an archive.."
